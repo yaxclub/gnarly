@@ -1,0 +1,39 @@
+
+YAX TECHNOLOGY
+
+skate tracker
+
+app / website? 
+
+database of tricks -> tips on how to learn / videos / ranking
+progression WEB 
+  popular schematic
+map -> spots (user uploads spots) photos 
+  comment on spots
+rankings
+track stats ie treflips hit : 5? treflips slammed from : 10? (possible AI technology -> input video and it stores your stats just from video)
+view skater profiles
+  message skaters / send videos etc
+  group chat implementation 
+own skater profile -> stance, fav trick, local, fav skater wva
+
+
+root -> skater social media + trick tracker & progression + spot finder
+
+technologies
+
+website first 
+  frontend -> website
+    next.js -> react -> typescript
+
+  backend -> database / login stuff
+    next.js -> typescript -> orm (drizzle) 
+
+  docker 
+
+app later 
+  flutter ? 
+  react native ?
+
+
+NAMES : Gnarly 
