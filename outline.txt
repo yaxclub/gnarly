@@ -24,7 +24,7 @@ technologies
 
 website first 
   frontend -> website
-    next.js -> react -> typescript
+    next.js -> react -> typescript && tailwind css
 
   backend -> database / login stuff
     next.js -> typescript -> orm (drizzle) 
@@ -34,6 +34,5 @@ website first
 app later 
   flutter ? 
   react native ?
-
 
 NAMES : Gnarly 

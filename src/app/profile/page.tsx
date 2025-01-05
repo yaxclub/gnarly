@@ -1,3 +1,5 @@
+import Button from "@/components/button"
+
 export default function Profile() {
-  return <h1>This your profile</h1>;
+  return <Button/>
 }
