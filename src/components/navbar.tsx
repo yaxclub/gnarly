@@ -28,7 +28,6 @@ const links: Array<Link> = [
 
 export default function NavBar() {
   const pathName = usePathname();
-  console.log(pathName);
 
   return (
     <div className="w-full p-4">
