@@ -11,7 +11,7 @@ export default function Wrapper({
   ...props
 }: WrapperProps) {
   return (
-    <div {...props} className={"w-3/5 mx-auto " + className}>
+    <div {...props} className={"w-screen h-screen mx-auto " + className}>
       {children}
     </div>
   );

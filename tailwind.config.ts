@@ -9,8 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        //light: (theme) => theme('colors.zinc-300'),
+        //dark: ({ theme }) => theme('colors.gray-700'), 
         foreground: "var(--foreground)",
+        'yellow': '#ffda1f',
+        'green': '#4a8a2f',
+      },
+      fontFamily: {
       },
     },
   },
