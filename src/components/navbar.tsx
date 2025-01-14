@@ -24,6 +24,10 @@ const links: Array<Link> = [
     display: "Your Profile",
     href: "/profile",
   },
+  {
+    display: "Messages",
+    href: "/messages",
+  },
 ];
 
 export default function NavBar() {
