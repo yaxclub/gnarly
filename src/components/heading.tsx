@@ -26,7 +26,7 @@ export default function Heading({
   return (
     <h1
       {...props}
-      className={"text-purple-400 " + size_to_font_size(size) + className}
+      className={"text-green " + size_to_font_size(size) + className}
     >
       {children}
     </h1>

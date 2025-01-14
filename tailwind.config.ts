@@ -13,7 +13,9 @@ export default {
         //dark: ({ theme }) => theme('colors.gray-700'), 
         foreground: "var(--foreground)",
         'yellow': '#ffda1f',
-        'green': '#4a8a2f',
+        'darkgreen': '#357a38',
+        'green': '#4caf50',
+        'lightgreen': '#6fbf73'
       },
       fontFamily: {
       },
