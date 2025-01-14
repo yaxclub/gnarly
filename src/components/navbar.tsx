@@ -31,7 +31,7 @@ export default function NavBar() {
 
   return (
     <div className="w-full p-4">
-      <div className="w-3/5 mx-auto p-4 flex flex-row justify-between">
+      <div className="w-3/5 mx-auto flex flex-row justify-between">
         {links.map((link, idx) => (
           <Link
             key={idx}
