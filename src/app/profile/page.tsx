@@ -2,20 +2,20 @@
 
 import Button from "@/components/button"
 import Wrapper from "@/components/wrapper"
+import Heading from "@/components/heading"
 import Image from "next/image"
 
 export default function Profile() {
   return (
     <>
-    <Wrapper 
-      className="bg-zinc-300 dark:bg-gray-700">
+    <Wrapper className="bg-gray-700">
 
       {/* main profile div */}
-      <div className="w-3/5 mx-auto text-green h-full bg-gray-800 flex flex-col justify-center">
+      <div className="w-3/5 mx-auto text-green m-h-screen bg-gray-800 flex flex-col justify-center">
 
         {/* profile header div */}
         <div className="flex flex-row justify-end relative mb-8">
-          <h1 className="text-4xl absolute w-full text-center">Coge Cdonnie</h1>
+          <Heading size={"xl"} className="text-4xl absolute w-full text-center">Coge Cdonnie</Heading>
 
           {/* log out button */}
           <Button 
@@ -37,28 +37,54 @@ export default function Profile() {
           <div className="text-right w-1/2 mx-6 relative">
 
             {/* bio div */}
-            <div className="mb-4 h-36">
-              <h1> User written bio </h1>
-              <h2> User may set these themselves - can add stat components as well </h2>
+            <div className="mb-4 h-auto">
+              <Heading size={"lg"}> Bio </Heading>
+              <p> User may set these themselves - can add stat components as well </p>
             </div>
 
             {/* stats div */}
             <div className="mt-4 h-36">
-              <h1> User validated stats </h1>
-              <h2> Favourite Spot: KG </h2>
-              <h2> Favourite Trick: Pop shuv it </h2>
-              <h2> Kickflips Hit: 0 </h2>
+              <Heading size={"lg"}> Stats </Heading>
+              <p> Favourite Spot: KG </p>
+              <p> Favourite Trick: Pop shuv it </p>
+              <p> Kickflips Hit: 0 </p>
             </div>
           </div>
         </div>
 
         <hr className="my-10" />
-
+  
         {/* uploads div */}
-        <div className="w-full h-full bg-lime-400 grid-cols-3 grid-rows-3">
-          <div className="">
+        <div className="w-full px-3 pb-3 grid grid-cols-3 gap-3 ">
+          {/* logic here to display all of users pictures */}
+          {/* for (let i = 0; i < picture_array.length(); i++) {
+            p_address = $picture_array.get_id(i).address;
+            <div 
+            className="relative aspect-square"
+            onClick={() => console.log("Open page")}
+            >
+                <Image src=`${p_address}` fill={true} alt="Image not found" />
+            </div>
+          }
+          */}
+          <div className="relative aspect-square">
+              <Image src="/coge.png" fill={true} alt="Image not found" />
           </div>
-
+          <div className="relative aspect-square">
+              <Image src="/coge.png" fill={true} alt="Image not found" />
+          </div>
+          <div className="relative aspect-square">
+              <Image src="/coge.png" fill={true} alt="Image not found" />
+          </div>
+          <div className="relative aspect-square">
+              <Image src="/coge.png" fill={true} alt="Image not found" />
+          </div>
+          <div className="relative aspect-square">
+              <Image src="/coge.png" fill={true} alt="Image not found" />
+          </div>
+          <div className="relative aspect-square">
+              <Image src="/coge.png" fill={true} alt="Image not found" />
+          </div>
         </div>
       </div>
     </Wrapper>
