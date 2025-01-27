@@ -1,5 +1,5 @@
 
-YAX TECHNOLOGY
+### YAX TECHNOLOGY
 
 skate tracker
 
@@ -29,10 +29,43 @@ website first
   backend -> database / login stuff
     next.js -> typescript -> orm (drizzle) 
 
-  docker 
+-------------------------------------------
+CORE DB -> 
+TABLE USER_CREDENTIALS
 
-app later 
-  flutter ? 
-  react native ?
+user_id, username, email, phone number, password
+id -> pkey
 
-NAMES : Gnarly 
+TABLE USER_INFO
+
+user_id, fname, lname, dob, pfp, description
+
+TABLE USER_SETTINGS
+
+user_id, email notifs... etc
+
+POSTS
+
+post_id, user_id, pic/vid, desc, location, likes, comment_id
+
+COMMENTS 
+
+comment_id, user_id, post_id, desc, likes
+
+-------------------------------------------
+
+TRICKS
+
+user_id, ollies, ollies attempted..., kickflips, kickflips attempted {1 | 5 | 10 | uncountable} 
+
+SPOTS
+
+spot_id, name, latitude, longitude, desc {⚠️ paid entry!, common rainfall, 🌈 indoor, free}
+
+
+
+
+
+
+
+

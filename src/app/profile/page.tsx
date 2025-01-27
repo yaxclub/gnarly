@@ -3,6 +3,7 @@
 import Button from "@/components/button"
 import Wrapper from "@/components/wrapper"
 import Heading from "@/components/heading"
+import Paragraph from "@/components/paragraph"
 import Image from "next/image"
 
 export default function Profile() {
@@ -11,7 +12,7 @@ export default function Profile() {
     <Wrapper className="bg-gray-700">
 
       {/* main profile div */}
-      <div className="w-3/5 mx-auto text-green m-h-screen bg-gray-800 flex flex-col justify-center">
+      <div className="w-3/5 mx-auto m-h-screen bg-gray-800 flex flex-col justify-center">
 
         {/* profile header div */}
         <div className="flex flex-row justify-end relative mb-8">
@@ -39,15 +40,15 @@ export default function Profile() {
             {/* bio div */}
             <div className="mb-4 h-auto">
               <Heading size={"lg"}> Bio </Heading>
-              <p> User may set these themselves - can add stat components as well </p>
+              <Paragraph> User may set these themselves - can add stat components as well </Paragraph>
             </div>
 
             {/* stats div */}
             <div className="mt-4 h-36">
               <Heading size={"lg"}> Stats </Heading>
-              <p> Favourite Spot: KG </p>
-              <p> Favourite Trick: Pop shuv it </p>
-              <p> Kickflips Hit: 0 </p>
+              <Paragraph> Favourite Spot: KG </Paragraph>
+              <Paragraph> Favourite Trick: Pop shuv it </Paragraph>
+              <Paragraph> Kickflips Hit: 0 </Paragraph>
             </div>
           </div>
         </div>

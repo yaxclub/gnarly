@@ -8,7 +8,7 @@ type ButtonProps = DetailedHTMLProps<
 export default function Button({ className, children,...props }: ButtonProps) {
   return (
     <button
-      {...props} className={ "bg-gray-700 font-bold rounded-md px-1 " + className }>
+      {...props} className={ "bg-gray-700 font-bold text-lightgreen rounded-md px-1 " + className }>
       { children }
     </button>)
 }
