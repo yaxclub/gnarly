@@ -57,36 +57,13 @@ export default function Profile() {
   
         {/* uploads div */}
         <div className="w-full px-3 pb-3 grid grid-cols-3 gap-3 ">
-          {/* logic here to display all of users pictures */}
-          {/* for (let i = 0; i < picture_array.length(); i++) {
-            p_address = $picture_array.get_id(i).address;
-            <div 
-            className="relative aspect-square"
-            onClick={() => console.log("Open page")}
-            >
-                <Image src=`${p_address}` fill={true} alt="Image not found" />
-            </div>
-          }
-          */}
-          <div className="relative aspect-square">
+          {new Array(100).fill(100).map((_, idx) => (
+          <div key={idx} className="relative aspect-square">
               <Image src="/coge.png" fill={true} alt="Image not found" />
           </div>
-          <div className="relative aspect-square">
-              <Image src="/coge.png" fill={true} alt="Image not found" />
-          </div>
-          <div className="relative aspect-square">
-              <Image src="/coge.png" fill={true} alt="Image not found" />
-          </div>
-          <div className="relative aspect-square">
-              <Image src="/coge.png" fill={true} alt="Image not found" />
-          </div>
-          <div className="relative aspect-square">
-              <Image src="/coge.png" fill={true} alt="Image not found" />
-          </div>
-          <div className="relative aspect-square">
-              <Image src="/coge.png" fill={true} alt="Image not found" />
-          </div>
+          ))}
         </div>
+
       </div>
     </Wrapper>
     </>
