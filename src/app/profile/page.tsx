@@ -57,7 +57,7 @@ export default function Profile() {
   
         {/* uploads div */}
         <div className="w-full px-3 pb-3 grid grid-cols-3 gap-3 ">
-          {new Array(100).fill(100).map((_, idx) => (
+          {new Array(10).fill(10).map((_, idx) => (
           <div key={idx} className="relative aspect-square">
               <Image src="/coge.png" fill={true} alt="Image not found" />
           </div>
