@@ -21,7 +21,7 @@ const links: Array<Link> = [
     href: "/progression",
   },
   {
-    display: "Your Profile",
+    display: "Profile",
     href: "/profile",
   },
   {
@@ -34,7 +34,7 @@ export default function NavBar() {
   const pathName = usePathname();
 
   return (
-    <div className="w-full p-4">
+    <div className="w-full p-4 bg-darkgray text-flame font-bold">
       <div className="w-3/5 mx-auto flex flex-row justify-between">
         {links.map((link, idx) => (
           <Link

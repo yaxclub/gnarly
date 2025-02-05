@@ -9,14 +9,14 @@ import Image from "next/image"
 export default function Profile() {
   return (
     <>
-    <Wrapper className="bg-gray-700">
+    <Wrapper>
 
       {/* main profile div */}
-      <div className="w-3/5 mx-auto m-h-screen bg-gray-800 flex flex-col justify-center">
+      <div className="w-3/5 mx-auto m-h-screen flex flex-col justify-center">
 
         {/* profile header div */}
         <div className="flex flex-row justify-end relative mb-8">
-          <Heading size={"xl"} className="text-4xl absolute w-full text-center">Coge Cdonnie</Heading>
+          <Heading size={"xl"} className="absolute w-full text-center">Coge Cdonnie</Heading>
 
           {/* log out button */}
           <Button 
@@ -30,7 +30,7 @@ export default function Profile() {
         <div className="flex flex-row justify-between">
 
           {/* profile picture div */} 
-          <div className="w-1/6 h-48 ml-20 relative border-green border-2"> 
+          <div className="w-1/6 h-48 ml-20 relative border-sunset border-2"> 
               <Image src="/coge.png" fill={true} alt="Image not found" />
           </div>
 

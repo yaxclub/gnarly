@@ -1,11 +1,11 @@
-import db from "@/db/db";
-import { users } from "@/db/schema/user";
-import { eq } from "drizzle-orm";
-import { NextResponse } from "next/server";
-import { z } from "zod";
 import * as argon from "argon2";
-import { cookies } from "next/headers";
+import db from "@/db/db";
 import jwt from "jsonwebtoken";
+import { z } from "zod";
+import { eq } from "drizzle-orm";
+import { users } from "@/db/schema/user";
+import { cookies } from "next/headers";
+import { NextResponse } from "next/server";
 
 const LoginRequest = z.object({
   username: z.string(),

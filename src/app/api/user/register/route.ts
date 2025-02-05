@@ -1,10 +1,10 @@
 import db from "@/db/db";
 import { users } from "@/db/schema/user";
+import { user_info }  from "@/db/schema/user_info";
+import * as argon from "argon2";
+import { eq, or } from "drizzle-orm";
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { eq, or } from "drizzle-orm";
-import * as argon from "argon2";
-import {user_info}  from "@/db/schema/user_info";
 
 const RegisterRequest = z.object({
   username: z.string(),

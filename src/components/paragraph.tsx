@@ -8,7 +8,7 @@ type ParagraphProps = DetailedHTMLProps<
 export default function Paragraph({ className, children, ...props }: ParagraphProps) {
   return (
     <p 
-      {...props} className={ "text-green font-bold " + className }>
+      {...props} className={ "text-sunset font-bold " + className }>
       { children }
     </p>)
   }
